@@ -1,0 +1,23 @@
+{
+  "name": "gittoken-docker",
+  "version": "1.0.0",
+  "description": "GitToken Docker Services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "GitToken",
+    "Ethereum",
+    "ERC20",
+    "Docker",
+    "Git"
+  ],
+  "author": "Ryan Tate <ryan.tate@gittoken.io>",
+  "license": "MIT",
+  "dependencies": {
+    "gittoken-registry": "0.0.1",
+    "gittoken-signer": "0.0.18",
+    "gittoken-webhook-manager": "0.0.4"
+  }
+}
