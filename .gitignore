@@ -1,6 +1,2 @@
 node_modules
-mysql.env
-parity.env
-registry.env
-signer.env
-webhook.env
+*.env
