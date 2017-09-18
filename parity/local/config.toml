@@ -1,0 +1,61 @@
+[parity]
+mode = "last"
+
+chain = "/Users/ryan/Projects/GitToken/gittoken-docker/parity/local/chain.json"
+keys_path = "/Users/ryan/Projects/GitToken/gittoken-docker/parity/local/keys"
+
+base_path = "/Users/ryan/Projects/GitToken/gittoken-docker/parity/local"
+
+[account]
+unlock = ["024138ba30f69f108a4e0aad9d51b4b4a4e03dd7"]
+password = ["/Users/ryan/Projects/GitToken/gittoken-docker/parity/local/.pk"]
+
+[ui]
+force = false
+disable = false
+port = 8180
+interface = "0.0.0.0"
+path = "/Users/ryan/Projects/GitToken/gittoken-docker/parity/local/signer"
+
+[rpc]
+interface = "0.0.0.0"
+cors = "*"
+disable = false
+port = 8545
+apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal"]
+hosts = ["all"]
+
+[websockets]
+disable = false
+port = 8546
+interface = "local"
+origins = ["*"]
+apis = ["web3", "eth", "net", "parity", "traces", "rpc", "secretstore"]
+hosts = ["all"]
+
+[ipc]
+disable = false
+path = "/Users/ryan/Projects/GitToken/gittoken-docker/parity/local/jsonrpc.ipc"
+apis = ["web3", "eth", "net", "parity", "parity_accounts", "personal", "traces", "rpc", "secretstore"]
+
+
+[ipfs]
+interface = "0.0.0.0"
+cors = "*"
+
+[network]
+port = 30303
+min_peers = 25
+max_peers = 50
+nat = "any"
+id = 9
+bootnodes = [
+"enode://41303dcfe290c3d1d405ec13e966bb89b026bec9f2f9a1ee8093de39129b8eb07603f845822ad3f00d71d7864727bd0dbc7e7305ce8a87dfe32a21a883621cb7@138.68.225.133:30303"
+]
+discovery = true
+warp = true
+allow_ips = "all"
+snapshot_peers = 0
+max_pending_peers = 64
+no_serve_light = false
+reserved_only = false

@@ -1,0 +1,41 @@
+version: '3.0'
+networks:
+  webnet:
+volumes:
+  signer-volume:
+  ipc-volume:
+  log-volume:
+services:
+  signer:
+    env_file:
+      - signer.env
+    build:
+      context: ./node_modules/gittoken-signer/.
+    ipc: host
+    volumes:
+      - signer-volume:/keystore/
+      - ipc-volume:/tmp/
+  webhookmgr:
+    ports:
+      - 3000:3000
+    env_file:
+      - webhook.env
+    build:
+      context: ./node_modules/gittoken-webhook-manager/.
+    ipc: signer
+    networks:
+      - webnet
+    volumes:
+      - log-volume:/db
+      - ipc-volume:/tmp/
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    networks:
+      - webnet

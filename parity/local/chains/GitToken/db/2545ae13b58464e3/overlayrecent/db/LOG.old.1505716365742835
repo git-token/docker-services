@@ -1,0 +1,72 @@
+2017/09/17-23:32:45.742280 7fffe53b53c0 RocksDB version: 4.11.2
+2017/09/17-23:32:45.742310 7fffe53b53c0 Git sha rocksdb_build_git_sha:dab9465c40b0a8fb7a59b461e516f27ff074274b
+2017/09/17-23:32:45.742313 7fffe53b53c0 Compile date Sep 17 2017
+2017/09/17-23:32:45.742314 7fffe53b53c0 DB SUMMARY
+2017/09/17-23:32:45.742375 7fffe53b53c0 CURRENT file:  CURRENT
+2017/09/17-23:32:45.742377 7fffe53b53c0 IDENTITY file:  IDENTITY
+2017/09/17-23:32:45.742383 7fffe53b53c0 MANIFEST file:  MANIFEST-000039 size: 1318 Bytes
+2017/09/17-23:32:45.742385 7fffe53b53c0 SST files in /Users/ryan/Projects/GitToken/gittoken-docker/parity/local/chains/GitToken/db/2545ae13b58464e3/overlayrecent/db dir, Total Num: 11, files: 000025.sst 000026.sst 000027.sst 000028.sst 000029.sst 000030.sst 000031.sst 000035.sst 000036.sst 
+2017/09/17-23:32:45.742386 7fffe53b53c0 Write Ahead Log file in /Users/ryan/Projects/GitToken/gittoken-docker/parity/local/chains/GitToken/db/2545ae13b58464e3/overlayrecent/db: 000042.log size: 3095 ; 
+2017/09/17-23:32:45.742388 7fffe53b53c0          Options.error_if_exists: 0
+2017/09/17-23:32:45.742390 7fffe53b53c0        Options.create_if_missing: 1
+2017/09/17-23:32:45.742391 7fffe53b53c0          Options.paranoid_checks: 1
+2017/09/17-23:32:45.742391 7fffe53b53c0                      Options.env: 0x10251ce58
+2017/09/17-23:32:45.742393 7fffe53b53c0                 Options.info_log: 0x7ff4d0007940
+2017/09/17-23:32:45.742393 7fffe53b53c0           Options.max_open_files: 512
+2017/09/17-23:32:45.742394 7fffe53b53c0 Options.max_file_opening_threads: 16
+2017/09/17-23:32:45.742395 7fffe53b53c0       Options.max_total_wal_size: 67108864
+2017/09/17-23:32:45.742396 7fffe53b53c0        Options.disableDataSync: 0
+2017/09/17-23:32:45.742397 7fffe53b53c0              Options.use_fsync: 0
+2017/09/17-23:32:45.742398 7fffe53b53c0      Options.max_log_file_size: 0
+2017/09/17-23:32:45.742399 7fffe53b53c0 Options.max_manifest_file_size: 18446744073709551615
+2017/09/17-23:32:45.742400 7fffe53b53c0      Options.log_file_time_to_roll: 0
+2017/09/17-23:32:45.742401 7fffe53b53c0      Options.keep_log_file_num: 1000
+2017/09/17-23:32:45.742402 7fffe53b53c0   Options.recycle_log_file_num: 0
+2017/09/17-23:32:45.742403 7fffe53b53c0        Options.allow_os_buffer: 1
+2017/09/17-23:32:45.742404 7fffe53b53c0       Options.allow_mmap_reads: 0
+2017/09/17-23:32:45.742405 7fffe53b53c0       Options.allow_fallocate: 1
+2017/09/17-23:32:45.742406 7fffe53b53c0      Options.allow_mmap_writes: 0
+2017/09/17-23:32:45.742407 7fffe53b53c0          Options.create_missing_column_families: 0
+2017/09/17-23:32:45.742408 7fffe53b53c0                              Options.db_log_dir: 
+2017/09/17-23:32:45.742409 7fffe53b53c0                                 Options.wal_dir: /Users/ryan/Projects/GitToken/gittoken-docker/parity/local/chains/GitToken/db/2545ae13b58464e3/overlayrecent/db
+2017/09/17-23:32:45.742410 7fffe53b53c0                Options.table_cache_numshardbits: 6
+2017/09/17-23:32:45.742411 7fffe53b53c0     Options.delete_obsolete_files_period_micros: 21600000000
+2017/09/17-23:32:45.742412 7fffe53b53c0              Options.base_background_compactions: 1
+2017/09/17-23:32:45.742413 7fffe53b53c0              Options.max_background_compactions: 2
+2017/09/17-23:32:45.742422 7fffe53b53c0                      Options.max_subcompactions: 1
+2017/09/17-23:32:45.742425 7fffe53b53c0                  Options.max_background_flushes: 2
+2017/09/17-23:32:45.742427 7fffe53b53c0                         Options.WAL_ttl_seconds: 0
+2017/09/17-23:32:45.742429 7fffe53b53c0                       Options.WAL_size_limit_MB: 0
+2017/09/17-23:32:45.742430 7fffe53b53c0             Options.manifest_preallocation_size: 4194304
+2017/09/17-23:32:45.742432 7fffe53b53c0                          Options.allow_os_buffer: 1
+2017/09/17-23:32:45.742433 7fffe53b53c0                         Options.allow_mmap_reads: 0
+2017/09/17-23:32:45.742435 7fffe53b53c0                        Options.allow_mmap_writes: 0
+2017/09/17-23:32:45.742437 7fffe53b53c0                      Options.is_fd_close_on_exec: 1
+2017/09/17-23:32:45.742438 7fffe53b53c0                    Options.stats_dump_period_sec: 600
+2017/09/17-23:32:45.742459 7fffe53b53c0                    Options.advise_random_on_open: 1
+2017/09/17-23:32:45.742470 7fffe53b53c0                     Options.db_write_buffer_size: 2048000d
+2017/09/17-23:32:45.742471 7fffe53b53c0          Options.access_hint_on_compaction_start: NORMAL
+2017/09/17-23:32:45.742473 7fffe53b53c0   Options.new_table_reader_for_compaction_inputs: 0
+2017/09/17-23:32:45.742493 7fffe53b53c0                Options.compaction_readahead_size: 0d
+2017/09/17-23:32:45.742505 7fffe53b53c0                Options.random_access_max_buffer_size: 1048576d
+2017/09/17-23:32:45.742507 7fffe53b53c0               Options.writable_file_max_buffer_size: 1048576d
+2017/09/17-23:32:45.742508 7fffe53b53c0                       Options.use_adaptive_mutex: 0
+2017/09/17-23:32:45.742509 7fffe53b53c0                             Options.rate_limiter: 0x0
+2017/09/17-23:32:45.742510 7fffe53b53c0      Options.sst_file_manager.rate_bytes_per_sec: 0
+2017/09/17-23:32:45.742511 7fffe53b53c0                           Options.bytes_per_sync: 0
+2017/09/17-23:32:45.742521 7fffe53b53c0                       Options.wal_bytes_per_sync: 0
+2017/09/17-23:32:45.742522 7fffe53b53c0                        Options.wal_recovery_mode: 2
+2017/09/17-23:32:45.742523 7fffe53b53c0                   Options.enable_thread_tracking: 0
+2017/09/17-23:32:45.742524 7fffe53b53c0          Options.allow_concurrent_memtable_write: 0
+2017/09/17-23:32:45.742525 7fffe53b53c0       Options.enable_write_thread_adaptive_yield: 0
+2017/09/17-23:32:45.742525 7fffe53b53c0              Options.write_thread_max_yield_usec: 100
+2017/09/17-23:32:45.742526 7fffe53b53c0             Options.write_thread_slow_yield_usec: 3
+2017/09/17-23:32:45.742527 7fffe53b53c0                                Options.row_cache: None
+2017/09/17-23:32:45.742528 7fffe53b53c0        Options.wal_filter: None
+2017/09/17-23:32:45.742529 7fffe53b53c0                     Options.avoid_flush_during_recovery: 0
+2017/09/17-23:32:45.742531 7fffe53b53c0 Compression algorithms supported:
+2017/09/17-23:32:45.742532 7fffe53b53c0 	Snappy supported: 1
+2017/09/17-23:32:45.742533 7fffe53b53c0 	Zlib supported: 0
+2017/09/17-23:32:45.742533 7fffe53b53c0 	Bzip supported: 0
+2017/09/17-23:32:45.742534 7fffe53b53c0 	LZ4 supported: 0
+2017/09/17-23:32:45.742536 7fffe53b53c0 Fast CRC32 supported: 0

@@ -1,0 +1,35 @@
+# This config should be placed in following path:
+#   $HOME/Library/Application Support/io.parity.ethereum/config.toml
+
+[parity]
+# Ropsten Test Network
+chain = "ropsten"
+# You will be identified as 'GitToken' amongst other nodes..
+identity = "GitToken"
+
+[ui]
+#  Wallet will listen for connections on IP 0.0.0.0.
+interface = "0.0.0.0"
+
+[rpc]
+#  JSON-RPC will be listening for connections on IP 0.0.0.0.
+interface = "0.0.0.0"
+# Allows Cross-Origin Requests from domain '*'.
+apis = ["web3", "eth", "net", "parity", "traces", "rpc"]
+cors = "*"
+
+[ipfs]
+# Secret Store will listen for connections on IP 0.0.0.0.
+interface = "0.0.0.0"
+# Allows Cross-Origin Requests from domain '*'.
+cors = "*"
+
+[network]
+# Parity will sync by downloading latest state first. Node will be operational in couple minutes.
+warp = true
+
+[websockets]
+#  JSON-RPC will be listening for connections on IP 0.0.0.0.
+interface = "0.0.0.0"
+# Allows connecting from Origin '*'.
+origins = ["*"]
