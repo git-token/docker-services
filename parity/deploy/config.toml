@@ -5,10 +5,6 @@ keys_path = "/root/parity/keys"
 
 base_path = "/root/parity"
 
-# [account]
-# unlock = ["024138ba30f69f108a4e0aad9d51b4b4a4e03dd7"]
-# password = ["/root/parity/.pk"]
-
 [ui]
 force = false
 disable = false
@@ -21,7 +17,7 @@ interface = "0.0.0.0"
 cors = "*"
 disable = false
 port = 8545
-apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal"]
+apis = ["web3", "eth", "net", "parity", "traces", "rpc"]
 hosts = ["all"]
 
 [websockets]
@@ -48,9 +44,7 @@ min_peers = 25
 max_peers = 50
 nat = "any"
 id = 9
-bootnodes = [
-"enode://ae7779e36d3bb9d6d650f8b441c0249b45fb7764e3d391f556735c3da34a54690a498bdfdc49095ae2a2f182ad40badb11f7b17fc00c62772a295abe331f4175@172.18.0.3:30303"
-]
+bootnodes = []
 discovery = true
 warp = true
 allow_ips = "all"
@@ -58,3 +52,6 @@ snapshot_peers = 0
 max_pending_peers = 64
 no_serve_light = false
 reserved_only = false
+
+[mining]
+reseal_min_period = 0
