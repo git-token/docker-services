@@ -7,7 +7,23 @@ volumes:
   privatenetwork-volume:
   rinkeby-volume:
   parity-volume:
+  listener-volume:
 services:
+  websocket:
+    env_file:
+      - ./environment/websocket.env
+    build:
+      context: ./node_modules/gittoken-socket/.
+    volumes:
+      - listener-volume:/tmp/
+  listener:
+    env_file:
+      - ./environment/listener.env
+    build:
+      context: ./node_modules/gittoken-event-listener/.
+    ipc: host
+    volumes:
+      - listener-volume:/tmp/
   rinkeby:
     build:
       context: ./rinkeby/.
