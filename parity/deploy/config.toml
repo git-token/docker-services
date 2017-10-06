@@ -5,6 +5,10 @@ keys_path = "/root/parity/keys"
 
 base_path = "/root/parity"
 
+[account]
+unlock = ["0xd6c05d314086488b757c3312e5d8a036fffdc082"]
+password = ["/root/parity/keys/.pk"]
+
 [ui]
 force = false
 disable = false

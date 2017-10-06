@@ -7,23 +7,29 @@ volumes:
   privatenetwork-volume:
   rinkeby-volume:
   parity-volume:
-  listener-volume:
 services:
   websocket:
+    ports:
+      - 3003:3003
     env_file:
       - ./environment/websocket.env
     build:
       context: ./node_modules/gittoken-socket/.
+    ipc: signer
     volumes:
-      - listener-volume:/tmp/
+      - ipc-volume:/tmp/
   listener:
     env_file:
       - ./environment/listener.env
     build:
       context: ./node_modules/gittoken-event-listener/.
-    ipc: host
+    ipc: signer
     volumes:
-      - listener-volume:/tmp/
+      - ipc-volume:/tmp/
+  testrpc:
+    build: ./testrpc/.
+    ports:
+      - 8745:8545
   rinkeby:
     build:
       context: ./rinkeby/.
@@ -93,4 +99,4 @@ services:
       context: ./parity/deploy/.
     volumes:
       - parity-volume:/root/parity
-    command: --geth --config /root/parity/config.toml
+    command: --config /root/parity/config.toml
